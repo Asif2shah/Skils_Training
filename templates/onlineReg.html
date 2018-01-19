@@ -1,0 +1,112 @@
+<html>
+<head>
+<style>
+
+.re{
+
+height:60px;
+padding:10px;
+
+}
+
+.ree{border-style:solid;
+color:white;
+background:skyblue;
+border-radius:50px;
+width:600px;
+height:30px;
+padding:10px;
+text-align:center;
+font-size:25px;
+margin-left:350px;
+
+border-color:gray;
+border-top-width:1px;
+border-left-width:1px;
+border-right-width:3px;
+border-bottom-width:3px;}
+
+
+
+legend{
+text-align:center;
+}
+.rs{
+border-color:darkgray;
+border-style:solid;
+background:skyblue;
+width:500px;
+height:780px;
+border-top-right-radius:150px;
+border-bottom-left-radius:150px;
+margin-left:400px;
+
+margin-top:40px;}
+#le{
+border-top-right-radius:150px;
+border-bottom-left-radius:150px;
+height:757px;
+margin-left:10px;
+width:450px;
+}
+#bu{
+width:130px;
+text-align:center;
+border-radius:25px;
+font-size:30px;
+background:green;}
+#img{
+margin-left:350px;}
+
+</style>
+
+</head>
+
+<body>
+
+{% extends "menu.html" %}
+{% block content %}
+
+<div class="re" ><div class="ree"  style="margin-top:420px; border-style:solid;">Online Registration Form</div></div>
+<div class="rs" style="margin-top:420px;">
+<fieldset id="le"> 
+<legend>
+Personal Information
+</legend>
+<h3>Name<br><input type="text" name="user1" required="required" placeholder="Full name"></h3>
+<h3>Father Name<br><input type="text" name="Fname" required="required" placeholder="FNAME"></h3>
+<h3>CNIC<br><input type="text" name="NIC" required="required" placeholder="*****-********-*"></h3>
+<h3>Date Of Birth<br><input type="text" name="Date birth" required="required" placeholder="05/07/1994"></h3>
+<h3>Gender<br><input type="radio" name="gender">Male<input type="radio" name="gender">Female</h3>
+<h3>Postal Address<br><input type="text" name="Adress" size="60"></h3>
+<h3>City<br><select>
+								<option>Select</option>
+								<option>Hyderabad</option>
+								<option>Jamshoro</option>
+								<option>Matiari</option>
+								<option>Karachi</option>
+								<option>Dadu</option>
+								<option>Other</option>  </h2><br></select>
+
+								
+<h3>District<br><select>
+								<option>Select</option>
+								<option>Hyderabad</option>
+								<option>Jamshoro</option>
+								<option>Matiari</option>
+								<option>Karachi</option>
+								<option>Dadu</option>
+								<option>Other</option>  </h2><br></select></h2>
+<h3>Mobile No<br><input type="text" name="number"></h3>
+<h3>Religion:&nbsp &nbsp <input type="radio" name="religion">Islam<input type="radio" name="religion">Non Muslim</h3>
+<h3>Select Trade<br><input type="radio" name="trade">C.I.T<input type="radio" name="trade"> Beautician<input type="radio" name="trade">Web Designing</h3>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="reset" value="Clear" name="user14" id="bu"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="submit" value="Done" name="user15" id="bu">
+</fieldset>
+</div>
+<img src="{{ url_for('static', filename='images/host.png') }}" id="img">
+
+{% endblock %}
+
+</body>
+
+</html>

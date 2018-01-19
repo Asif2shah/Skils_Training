@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link href="{{ url_for('static', filename='css/sofft.css') }}" rel="stylesheet"/>
+</head>
+
+<body bgcolor="skyblue">
+
+    {% extends "menu.html" %}
+    {% block content %}
+
+    <div class="larsolid" style="margin-top:420px;" >
+
+    <div class="row">
+        <div class="lmsolid">
+            <div class="lsolid">Result</div>
+            <br>
+            <div class="lisolid">
+                <img src="{{ url_for('static', filename='images/arrow1.gif') }}" id="arrow">
+                <font color="white">Web Designing Training</font><br>
+                (Monthly Test)<br>
+                [Result Announced]<br>
+                [Date 9:May,2017]
+                <br>
+                <br>
+                <br>
+                <br><img src="{{ url_for('static', filename='images/arrow1.gif') }}" id="arrow">
+                <font color="white">Stitching Training</font><br>
+                (Monthly Test)<br>
+                [Result Announced]<br>
+                [Date 9:May,2017]
+                <br>
+                <br>
+                <br>
+                <br><img src="{{ url_for('static', filename='images/arrow1.gif') }}" id="arrow">
+                <font color="white">Beautician Course</font><br>
+                Monthly Test)<br>
+                [Result Announced]<br>
+                [Date 9:May,2017]
+            </div>
+        </div>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" id="logo">
+
+
+        <div class="rmsolid">
+            <div class="lsolid">NEWS UPDATE</div>
+            <br>
+            <div class="risolid"><img src="{{ url_for('static', filename='images/arrow.gif') }}" id="arrow1">
+                <font color="red">NEWS!</font><br>
+                <h6>Pre bid meeting will be held on Thursday, April 23, 2015 at 1500 HRS in Committee Room BBSHRRD&B 3rd
+                    Floor, State Life Building #3 Dr. Ziauddin Ahmed Road, Karachi. Interested Bidders should attend the
+                    meeting to clarify their queries if any.</h6>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+
+</html>

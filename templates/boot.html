@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>softskills</title>
+		<link href="{{ url_for('static', filename='css/sofft.css') }}" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	</head>
+	<body bgcolor="skyblue">
+		<!--<div>-->
+				<!--<img src="{{ url_for('static', filename='images/cover.jpg') }}" id="img">-->
+
+
+				<!--<div class="outset" ><ul>-->
+					<!--<li><a href="{{ url_for('home') }}" >Home</a></li>-->
+					<!--<li><a href="{{ url_for('onlinereg') }}" target="ab">Online Registration</a></li>-->
+					<!--<li><a href="{{ url_for('media') }}" target="ab">Media Gallary</a></li>-->
+					<!--<li><a href="{{ url_for('about') }}" target="ab">About Us</a></li>-->
+					<!--<li><a href="{{ url_for('contact') }}" target="ab">Contact Us</a></li>-->
+
+				<!--</ul></div>-->
+				<!--<div class="solid"><marquee>"M/S UNI TECH" AN ACADEMY FOR SKILL DEVELOPMENT</marquee></div>-->
+		<!--</div>-->
+		<div>
+			<div>
+				<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Button</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+			  	</ul>
+			</div>
+			<br>
+
+			<div class="dropup">
+			  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Another Button with Drop Menu
+				<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+
+			<br>
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Dropdown
+				<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div>
+		<!--{% block content %} {% endblock %}</div>-->
+		</div>
+	</body>
+</html>

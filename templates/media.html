@@ -1,0 +1,169 @@
+<html>
+<head><style>
+
+.mee{
+height:40px;
+padding-top:20px;
+}
+
+.me{
+border-style:solid;
+width:400px;
+height:40px;
+margin-left:430px;
+text-align:center;
+padding-top:20px;
+font-size:25px;
+border-radius:50px;
+color:white;
+background:skyblue;
+border-color:gray;
+border-top-width:1px;
+border-left-width:1px;
+border-bottom-width:2px;}
+
+
+
+#field{
+background:skyblue;
+width:1280px;
+height:300px;
+margin-left:10px;
+margin-top:500px;
+border-color:gray;
+border-top-width:1px;
+border-left-width:1px;
+border-bottom-width:3px;
+border-right-width:3px;
+}
+
+#pic{
+width:200px;
+height:180px;
+margin-top:110px;
+margin-left:100px;
+position:absolute;
+border-radius:50px;
+border-style:solid;
+border-width:5px;
+}
+#pic:hover{
+opacity:0.7;
+transition:2s;
+border-radius:390px;
+cursor:pointer;}
+
+#pic1{
+width:200px;
+height:180px;
+margin-top:110px;
+margin-left:490px;
+position:absolute;
+border-radius:50px;
+border-style:solid;
+border-width:5px;
+}
+#pic1:hover{
+opacity:0.7;
+transition:2s;
+border-radius:150px;}
+
+#pic2{
+border-style:solid;
+border-radius:50px;
+width:200px;
+height:180px;
+margin-top:110px;
+margin-left:900px;
+position:absolute;
+border-width:5px;
+}
+#pic2:hover{
+opacity:0.7;
+border-radius:150px;
+transition:2s;}
+
+.sil{
+border-style:solid;
+border-top-width:1px;
+border-left-width:1px;
+border-bottom-width:2px;
+width:200px;
+height:35px;
+text-align:center;
+padding-top:7px;
+border-radius:50px;
+margin-top:50px;
+margin-left:97px;
+position:absolute;
+font-size:25px;
+color:white;
+border-color:gray;}
+
+.buti{
+border-style:solid;
+border-top-width:1px;
+border-left-width:1px;
+border-bottom-width:2px;
+width:200px;
+height:37px;
+text-align:center;
+padding-top:7px;
+border-radius:50px;
+margin-top:50px;
+margin-left:487px;
+position:absolute;
+color:white;
+font-size:25px;
+border-color:gray;}
+
+
+.com{
+border-style:solid;
+border-top-width:1px;
+border-left-width:1px;
+border-bottom-width:2px;
+color:white;
+width:200px;
+height:37px;
+text-align:center;
+padding-top:7px;
+border-radius:50px;
+margin-top:50px;
+margin-left:897px;
+position:absolute;
+font-size:25px;
+border-color:gray;}
+
+
+a:hover {
+				background: orange;
+				color: green;
+				transition: 1s;
+				border-radius: 200px;
+				}
+
+
+</style>
+
+</head>
+<body>
+{% extends "menu.html" %}
+{% block content %}
+
+<div class="mee"><div class="me" style="margin-top:420px;">MEDIA GALLARY</div></div>
+<fieldset id="field">
+<div class="sil">Stitching Lab</div>
+<a href="#"><img src="{{ url_for('static', filename='images/stit.jpg') }}" id="pic" /></a>
+
+
+<div class="buti">Beautcian Lab</div>
+<a href="#"><img src="{{ url_for('static', filename='images/beuti.jpg') }}" id="pic1"/></a>
+
+<div class="com">Computer Lab</div>
+<a href="#"><img src="{{ url_for('static', filename='images/comp.jpg') }}" id="pic2"/></a>
+
+</fieldset>
+</body>
+{% endblock %}
+</html>
